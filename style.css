@@ -1,13 +1,36 @@
 
-body {
-    width: 1000px;
-    background: green;
+html {
+    background: darkslategrey;
+    height: 100%;
     color: aquamarine;
 }
-header {
-    background-image: url("QR-code.png") ;
-    background-repeat: no-repeat;
-    background-size: 20%;
-    background-position: right top;
+
+body {
+    margin: 10dvh;
+    padding: 5dvh;
+    height: 70dvh;
+    background: darkgreen;
+    font-size: 3dvh;
 }
 
+header{
+    margin: 0;
+    background-image: url("qr_code.png") ;
+    background-repeat: no-repeat;
+    background-size: 27%;
+    background-position: right;
+}
+
+section p{
+    margin-top: 8%;
+}
+
+footer {
+    margin-top: 15%;
+
+}
+
+footer a{
+    background: aquamarine;
+    color: darkgreen;
+}
