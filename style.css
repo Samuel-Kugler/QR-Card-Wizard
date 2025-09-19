@@ -1,1 +1,13 @@
 
+body {
+    width: 1000px;
+    background: green;
+    color: aquamarine;
+}
+header {
+    background-image: url("QR-code.png") ;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: right top;
+}
+
