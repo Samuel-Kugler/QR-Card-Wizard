@@ -1,36 +1,58 @@
-
-html {
-    background: darkslategrey;
-    height: 100%;
-    color: aquamarine;
+/*mini-reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 10dvh;
-    padding: 5dvh;
-    height: 70dvh;
-    background: darkgreen;
-    font-size: 3dvh;
+    background-color: #DDDDDD;
+    color: #E0F8D0;
+    min-width: 100dvw;
+    min-height: 100dvh;
+    display: grid;
+    place-content: center;
 }
 
-header{
-    margin: 0;
-    background-image: url("qr_code.png") ;
+main {
+    padding: 10%;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #3A4E3F;
+    min-width: fit-content;
+
+}
+
+/*QR-Code*/
+header {
+    background-image: url("qr_code.png");
+    background-size: 100px;
     background-repeat: no-repeat;
-    background-size: 27%;
     background-position: right;
+    padding-right: 120px;
 }
 
-section p{
-    margin-top: 8%;
+/*layout*/
+h1 {
+    margin-bottom: 4rem;
+}
+section p {
+     margin-top: 2rem;
 }
 
 footer {
-    margin-top: 15%;
+    margin-top: 4rem;
+}
+
+/*buttons*/
+footer a {
+    padding: 0.5rem;
+    background: #E0F8D0;
+    color: #3A4E3F;
 
 }
 
-footer a{
-    background: aquamarine;
-    color: darkgreen;
+footer a:hover {
+    color: black;
+    font-style: oblique;
 }
