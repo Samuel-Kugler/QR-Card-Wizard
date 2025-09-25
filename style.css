@@ -5,51 +5,74 @@
     padding: 0;
 }
 
+/*sizes for different devices*/
+/*small*/
+:root{
+    /*font*/
+    --fs-base: 16px;
+    /*dividers*/
+    --space-outer: 1.25rem;/*body margin*/
+    --space-card: 1rem;/*padding of the main*/
+    --gap: 1rem;/*gap between elements in main*/
+    /*layout*/
+    --container: 62ch;/*max width of text*/
+    /*items (qr, pointer)*/
+    --qr: 6rem;/*qr(size)*/
+}
+
+/*everything scales with font size (rem)*/
+html {
+    font-size: var(--fs-base);
+}
+
 body {
     background-color: #DDDDDD;
     color: #E0F8D0;
-    min-width: 100dvw;
-    min-height: 100dvh;
+    min-height: 100svh;
     display: grid;
     place-content: center;
+    padding: var(--space-outer);
 }
 
 main {
-    padding: 10%;
+    display: flex;
     flex-direction: column;
-    gap: 2rem;
     background-color: #3A4E3F;
-    min-width: fit-content;
-
+    gap: var(--gap);
+    padding: var(--space-card);
+    width: 100%;
+    max-width: var(--container);
 }
 
 /*QR-Code*/
 header {
     background-image: url("qr_code.png");
-    background-size: 100px;
+    background-size: var(--qr);
     background-repeat: no-repeat;
-    background-position: right;
-    padding-right: 120px;
+    background-position: right var(--space-card) top var(--space-card);
+    min-height: var(--qr);
 }
 
 /*layout*/
-h1 {
-    margin-bottom: 4rem;
+header h1 {
+    max-width: min(30ch, calc(100% - (var(--qr) + var(--space-card) + var(--gap))));
+    margin-bottom: var(--gap);
 }
 section p {
-     margin-top: 2rem;
+    margin-top: var(--gap);
 }
 
 footer {
-    margin-top: 4rem;
+    margin-top: var(--gap);
+    margin-bottom: var(--gap);
 }
 
 /*buttons*/
 footer a {
-    padding: 0.5rem;
     background: #E0F8D0;
     color: #3A4E3F;
-
+    padding: 0.5rem;
+    margin-right: calc(var(--gap)*0.5);
 }
 
 footer a:hover {
