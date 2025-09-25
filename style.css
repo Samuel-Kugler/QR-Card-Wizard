@@ -79,3 +79,57 @@ footer a:hover {
     color: black;
     font-style: oblique;
 }
+
+/*different devices*/
+/* 0–599px */
+:root { --fs-base: 16px; }
+
+/*  600px */
+@media (min-width: 600px) {
+  :root { --fs-base: 17px; }
+}
+
+/* 768px */
+@media (min-width: 768px) {
+  :root { --fs-base: 18px; }
+}
+
+/* 1024px */
+@media (min-width: 1024px) {
+  :root { --fs-base: 18.5px; }
+}
+
+/* 1200px */
+@media (min-width: 1200px) {
+  :root { --fs-base: 19px; }
+}
+
+/* 1440px */
+@media (min-width: 1440px) {
+  :root { --fs-base: 20px; }
+}
+
+/* 1600 px */
+@media (min-width: 1600px) {
+  :root { --fs-base: 20.5px; }
+}
+
+/* 1920 px */
+@media (min-width: 1920px) {
+  :root { --fs-base: 21px; }
+}
+
+/* 2560 px */
+@media (min-width: 2560px) {
+  :root { --fs-base: 22px; }
+}
+
+/* 3440 px */
+@media (min-width: 3440px) {
+  :root { --fs-base: 23px; }
+}
+
+/* 3840 px */
+@media (min-width: 3840px) {
+  :root { --fs-base: 24px; }
+}
